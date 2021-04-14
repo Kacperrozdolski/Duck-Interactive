@@ -43,6 +43,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.25rem;
     .logo {
       height: 100%;
       position: relative;
@@ -60,6 +61,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.25rem;
         width: 20%;
         text-align: center;
         height: 50px;
@@ -81,14 +83,15 @@ export default {
       width: 40%;
       height: 100%;
       h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         color: #020e35;
       }
       button {
-        width: 140px;
-        height: 40px;
+        width: 160px;
+        height: 50px;
         border: none;
         outline: none;
+        font-size: 1.25rem;
         font-family: Poppins;
         color: white;
         cursor: pointer;

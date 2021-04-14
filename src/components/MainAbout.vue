@@ -43,6 +43,7 @@ section {
     width: 50%;
     text-align: center;
     color: #2b2b2b;
+    font-size: 1.25rem;
   }
 }
 </style>

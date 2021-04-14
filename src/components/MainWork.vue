@@ -112,6 +112,9 @@ section {
         width: 50%;
         height: 100%;
         color: white;
+        p {
+          font-size: 1.25rem;
+        }
       }
       .card-image {
         width: 50%;
@@ -129,6 +132,7 @@ section {
     }
     .work-card:nth-child(2) {
       flex-direction: row-reverse;
+      text-align: right;
     }
     .work-card:nth-child(2) > .card-image {
       background: #8c32f0;
@@ -138,6 +142,7 @@ section {
     }
     .work-card:nth-child(4) {
       flex-direction: row-reverse;
+      text-align: right;
     }
     .work-card:nth-child(4) > .card-image {
       background: #32d6f0;
