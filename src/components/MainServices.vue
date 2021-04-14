@@ -72,7 +72,7 @@ section {
     justify-content: space-between;
     height: 90vh;
     .service-card {
-      width: 350px;
+      width: 450px;
       height: 75%;
       display: flex;
       flex-direction: column;
@@ -89,6 +89,7 @@ section {
       p {
         margin: 0;
         font-size: 0.9rem;
+        width: 90%;
       }
       button {
         width: 140px;

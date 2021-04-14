@@ -2,8 +2,10 @@
   <section>
     <div class="contact-container">
       <div class="contact-content">
-        <h2>Questions,Comments,Concerns?</h2>
-        <h1>We'd love to <span>hear</span> from your!</h1>
+        <div>
+          <h2>Questions,Comments,Concerns?</h2>
+          <h1>We'd love to <span>hear</span> from your!</h1>
+        </div>
       </div>
       <div class="contact-form">
         <div>
@@ -40,15 +42,14 @@ section {
   height: 60vh;
   display: flex;
   justify-content: center;
-
   .contact-container {
     display: flex;
     width: 90%;
-    height: 100%;
+    min-height: 50%;
+    align-items: center;
     .contact-content {
-      margin-top: 5%;
       width: 50%;
-      height: 100%;
+      height: 65%;
       display: flex;
       flex-direction: column;
       h2 {
@@ -64,9 +65,8 @@ section {
       }
     }
     .contact-form {
-      margin-top: 5%;
       width: 50%;
-      height: 100%;
+      height: 65%;
       display: flex;
       flex-direction: column;
       gap: 10px;

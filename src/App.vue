@@ -5,6 +5,7 @@
     <main-services></main-services>
     <main-work></main-work>
     <main-contact></main-contact>
+    <main-footer></main-footer>
   </div>
 </template>
 
@@ -14,10 +15,18 @@ import MainAbout from "./components/MainAbout.vue";
 import MainServices from "./components/MainServices.vue";
 import MainWork from "./components/MainWork.vue";
 import MainContact from "./components/MainContact.vue";
+import MainFooter from "./components/MainFooter.vue";
 
 export default {
   name: "App",
-  components: { MainHero, MainAbout, MainServices, MainWork, MainContact },
+  components: {
+    MainHero,
+    MainAbout,
+    MainServices,
+    MainWork,
+    MainContact,
+    MainFooter,
+  },
 };
 </script>
 
