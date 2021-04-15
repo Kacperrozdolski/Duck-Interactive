@@ -84,6 +84,7 @@ section {
   h1 {
     margin: 0 0 50px 0;
     color: #ffffff;
+    font-family: Yeseva One;
     font-size: 3rem;
     position: relative;
   }

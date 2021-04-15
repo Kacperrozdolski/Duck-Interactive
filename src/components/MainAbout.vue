@@ -27,6 +27,7 @@ section {
     margin: 50px 0 0 0;
     color: #020e35;
     font-size: 3rem;
+    font-family: Yeseva One;
     position: relative;
   }
   h1::before {

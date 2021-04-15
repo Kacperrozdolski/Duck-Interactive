@@ -61,7 +61,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.25rem;
+        font-size: 1rem;
         width: 20%;
         text-align: center;
         height: 50px;
@@ -85,13 +85,14 @@ export default {
       h1 {
         font-size: 6rem;
         color: #020e35;
+        font-family: Yeseva One;
       }
       button {
         width: 160px;
         height: 50px;
         border: none;
         outline: none;
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-family: Poppins;
         color: white;
         cursor: pointer;
@@ -107,6 +108,11 @@ export default {
         margin-left: auto;
       }
     }
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
 }
 </style>

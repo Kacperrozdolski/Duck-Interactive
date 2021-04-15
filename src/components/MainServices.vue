@@ -54,6 +54,7 @@ section {
     color: #020e35;
     font-size: 3rem;
     position: relative;
+    font-family: Yeseva One;
   }
   h1::before {
     position: absolute;
@@ -72,7 +73,7 @@ section {
     justify-content: space-between;
     height: 90vh;
     .service-card {
-      width: 450px;
+      width: 350px;
       height: 75%;
       display: flex;
       flex-direction: column;
