@@ -42,5 +42,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 </style>

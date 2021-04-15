@@ -9,8 +9,9 @@
         <p>ABOUT</p>
         <p>SERVICES</p>
         <p>PORTFOLIO</p>
-        <p>CONTACT US</p>
+        <p>CONTACT</p>
       </div>
+      <img src="@/assets/hamburger.svg" class="hamburger" />
     </nav>
     <div class="hero-container">
       <div class="hero-content">
@@ -33,7 +34,7 @@ export default {
 <style lang="scss" scoped>
 .hero {
   width: 100%;
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -41,28 +42,31 @@ export default {
     height: 10vh;
     width: 90%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 1.25rem;
     .logo {
       height: 100%;
       position: relative;
       img {
-        position: absolute;
-        height: 140%;
+        height: 100px;
       }
     }
+    .hamburger {
+      display: none;
+    }
     .menu {
-      width: 50%;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      min-width: 50%;
+      justify-content: space-between;
+      align-self: flex-end;
+      margin-left: auto;
+      gap: 10px;
       p {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1rem;
-        width: 20%;
+        width: 25%;
         text-align: center;
         height: 50px;
         color: #2b2b2b;
@@ -76,14 +80,19 @@ export default {
     }
   }
   .hero-container {
-    height: 80vh;
+    min-height: 80vh;
     width: 90%;
     display: flex;
+    align-items: center;
     .hero-content {
-      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       height: 100%;
       h1 {
-        font-size: 6rem;
+        font-size: 6vw;
+        margin: 20px 0px;
         color: #020e35;
         font-family: Yeseva One;
       }
@@ -100,19 +109,47 @@ export default {
       }
     }
     .hero-image {
-      height: 100%;
-      width: 60%;
+      width: 100%;
+      min-height: 100%;
       display: flex;
+      align-items: center;
       img {
-        height: 100%;
-        margin-left: auto;
+        height: inherit;
+        width: inherit;
       }
     }
   }
 }
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 700px) {
+  .hero {
+    .hero-container {
+      flex-direction: column;
+      justify-content: center;
+      .hero-content {
+        h1 {
+          text-align: center;
+          font-size: 10vw;
+        }
+        button {
+          display: none;
+        }
+      }
+    }
+    nav {
+      .logo {
+        img {
+          height: 100%;
+        }
+      }
+      .menu {
+        display: none;
+      }
+      .hamburger {
+        display: inline;
+        margin-left: auto;
+        height: 50%;
+      }
+    }
   }
 }
 </style>

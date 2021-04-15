@@ -71,7 +71,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 90vh;
+    gap: 20px;
+    margin: 40px 0;
+
+    min-height: 90vh;
     .service-card {
       width: 350px;
       height: 75%;
@@ -112,6 +115,20 @@ section {
     }
     .service-card:nth-child(3) {
       background: #feeff0;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  section {
+    h1 {
+      text-align: center;
+    }
+    .services-container {
+      flex-direction: column;
+      gap: 40px;
+      .service-card {
+        width: 75%;
+      }
     }
   }
 }

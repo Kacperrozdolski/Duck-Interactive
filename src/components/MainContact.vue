@@ -2,29 +2,29 @@
   <section>
     <div class="contact-container">
       <div class="contact-content">
-        <div>
-          <h2>Questions,Comments,Concerns?</h2>
-          <h1>We'd love to <span>hear</span> from your!</h1>
-        </div>
+        <h2>Questions,Comments,Concerns?</h2>
+        <h1>We'd love to <span>hear</span> from your!</h1>
       </div>
       <div class="contact-form">
         <div>
-          <label for="email">Your Email Address</label>
-          <input type="text" id="email" placeholder="example@mail.com" />
+          <div>
+            <label for="email">Your Email Address</label>
+            <input type="text" id="email" placeholder="example@mail.com" />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="I would love to.." />
+          </div>
+          <div>
+            <label for="message">Your Email Address</label>
+            <textarea
+              type="text"
+              id="message"
+              placeholder="Your message starts with.."
+            />
+          </div>
+          <button>Send a message</button>
         </div>
-        <div>
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="I would love to.." />
-        </div>
-        <div>
-          <label for="message">Your Email Address</label>
-          <textarea
-            type="text"
-            id="message"
-            placeholder="Your message starts with.."
-          />
-        </div>
-        <button>Send a message</button>
       </div>
     </div>
   </section>
@@ -39,25 +39,30 @@ export default {
 <style lang="scss" scoped>
 section {
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
+
   .contact-container {
     display: flex;
     width: 90%;
-    min-height: 50%;
-    align-items: center;
+    min-height: 100%;
+    gap: 30px;
+    justify-content: center;
     .contact-content {
       width: 50%;
-      height: 65%;
+      height: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       h2 {
-        font-size: 2rem;
+        font-size: 1.5vw;
         margin: 0;
       }
       h1 {
-        font-size: 5rem;
+        font-size: 5vw;
         margin: 0;
         span {
           color: #e73587;
@@ -66,9 +71,10 @@ section {
     }
     .contact-form {
       width: 50%;
-      height: 65%;
+      height: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 10px;
       div {
         display: flex;
@@ -102,6 +108,29 @@ section {
         color: white;
         cursor: pointer;
         background: linear-gradient(to left, #d332f0, #e73587);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  section {
+    .contact-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .contact-content {
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-size: 5vw;
+        }
+        h2 {
+          font-size: 4vw;
+        }
+      }
+      .contact-form {
+        width: 80vw;
       }
     }
   }

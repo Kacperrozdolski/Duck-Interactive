@@ -105,7 +105,7 @@ section {
     gap: 50px;
     flex-direction: column;
     .work-card {
-      height: 55vh;
+      min-height: 55vh;
       width: 100%;
       display: flex;
       gap: 30px;
@@ -119,7 +119,7 @@ section {
       }
       .card-image {
         width: 50%;
-        height: 100%;
+        min-height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -147,6 +147,23 @@ section {
     }
     .work-card:nth-child(4) > .card-image {
       background: #32d6f0;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  section {
+    .work-container {
+      .work-card {
+        flex-direction: column !important;
+        .card-content {
+          width: 100%;
+          text-align: center;
+        }
+        .card-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
 }
